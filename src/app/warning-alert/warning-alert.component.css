@@ -1,0 +1,10 @@
+.warning {
+  color: red;
+  background-color: pink;
+  width: 300px;
+  height: 100px;
+  display: table-cell;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+}
