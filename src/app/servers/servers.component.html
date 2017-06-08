@@ -1,3 +1,10 @@
+<label>Server Name</label>
+<input
+  type="text"
+  class="form-control"
+  (input)="onUpdateServerName($event)"> <!--$event va a ser la data que se ingrese, pero dentro del objeto event.
+  Para agarrar la data tendriamos que hacer event.target.value-->
+<p>{{ serverName }}</p>
 <button
   [disabled]="!allowNewServer"
   class="btn btn-primary"
