@@ -1,7 +1,9 @@
 <button
   [disabled]="!allowNewServer"
-  class="btn btn-primary">Add Server</button>
-<p [innerText]="allowNewServer"></p> <!--This is property Bindig-->
-<p>{{allowNewServer}}</p> <!--This is String interpolation-->
+  class="btn btn-primary"
+  (click)="onCreateServer()">Add Server</button> <!--(click) event binder with click event!-->
+<!--<p [innerText]="allowNewServer"></p>--> <!--This is property Bindig-->
+<!--<p>{{allowNewServer}}</p> --><!--This is String interpolation-->
+<p> {{ serverCreationStatus }} </p>
 <app-server></app-server>
 <app-server></app-server>
