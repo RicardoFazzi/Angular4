@@ -4,6 +4,10 @@
   class="form-control"
   (input)="onUpdateServerName($event)"> <!--$event va a ser la data que se ingrese, pero dentro del objeto event.
   Para agarrar la data tendriamos que hacer event.target.value-->
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="serverName">
 <p>{{ serverName }}</p>
 <button
   [disabled]="!allowNewServer"
