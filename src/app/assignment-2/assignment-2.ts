@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
 })
 export class Assignment2 {
   username: string = '';
+
+  resetUsername() {
+    this.username = '';
+  }
 }
