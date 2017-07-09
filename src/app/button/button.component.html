@@ -1,0 +1,5 @@
+<button (click)="onClick()" class="btn btn-primary">Display Details</button>
+<p *ngIf="showText">{{text}}</p>
+<p *ngFor="let date of dates; let i = index"
+  [ngStyle]="{'background-color': i > 3 ? hasColorBackground() : ''}"
+  [ngClass]="{whiteColor: i > 3}">{{date}}</p>
